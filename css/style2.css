@@ -1,0 +1,22 @@
+/* *{
+    border: 2px solid;
+}*/
+li > a{
+    color:red;
+}
+/*
+h1 + h4{ 
+    border: 4px dashed;
+}*/
+a[href='/recibo']{
+    color: orange;
+}
+li:nth-of-type(2){
+    color: red;
+}
+div{
+    border: 2px solid;
+}
+div ul{
+    border: inherit;
+}

@@ -1,0 +1,20 @@
+
+.moon{
+    color: blueviolet;
+}
+.big-text{
+    font-size: 40px;
+}
+#europa-text{
+    font-size: 10px;
+    color: greenyellow;
+}
+h1{
+    font-size: 50px;
+    border: 2px dashed green;
+}
+body{
+    background-image: url('https://www.showmetech.com.br/wp-content/uploads//2019/05/40126461411_a6e49a61f2_k.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
