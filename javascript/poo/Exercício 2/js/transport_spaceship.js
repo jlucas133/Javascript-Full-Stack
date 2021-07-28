@@ -3,4 +3,4 @@ class TransportSpaceship extends Spaceship {
       super(name, crewQuantity)
       this.sitsQuantity = sitsQuantity
     }
-  }
+}
