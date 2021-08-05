@@ -1,0 +1,22 @@
+#Babel
+npm init
+npm install @babel/core @babel/cli @babel/preset-env  //preset-env converte es6 ou superior para es5
+npm install @babel/core @babel/cli @babel/preset-env --save-dev  // --save-dev inclui o pacote apenas no dev dependeces do package.json isso pq é um pacote apenas pro desenvolvimento da aplicação
+npx babel index.js -o transpiled.js // converte o arquivo para versões anteriores
+
+
+
+
+
+
+#Webpack
+npm init -y
+sudo chown -R $USER:$GROUP ~/.npm
+sudo chown -R $USER:$GROUP ~/.config
+npm install --save-dev webpack wepack-cli
+npm install moment
+npx webpack
+npx webpack --mode development
+npm install @babel/core @babel/preset-env babel-loader core-js@3
+npm install webpack-dev-server --save-dev
+npm run nomedoscript
