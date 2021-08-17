@@ -8,8 +8,6 @@ async function getSatellites(id){
     return data;
 }
 
-
-
 class Planet extends React.Component {
     constructor(props) {
         super(props);
@@ -17,7 +15,7 @@ class Planet extends React.Component {
             satellites: []
         }
     }
-
+    
     
     componentDidMount(){
         getSatellites(this.props.id).then(data =>{
