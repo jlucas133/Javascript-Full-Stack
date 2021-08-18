@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import GrayImg from '../shared/gray_img';
 import DescriptionWithLink from '../shared/description_with_link';
 import Form from './form';
-import {useParams, Link} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 
 
 
@@ -16,8 +16,8 @@ const Planet = () => {
 
     const [satellites, setSatellites] = useState([]);
     const [planet, setPlanet] = useState({});
-
     let {id} = useParams();
+    let history = useHistory();
 
     useEffect(() => { 
         getPlanet(id).then(data =>{
@@ -26,6 +26,10 @@ const Planet = () => {
 
         })
     }, [])
+
+    const goToPlanets = () =>{
+        history.push('/');
+    }
 
     const addSatellites = (new_satellite) => {
         setSatellites([...satellites, new_satellite])
@@ -48,7 +52,7 @@ const Planet = () => {
                 )}
             </ul>
             <hr />
-            <Link to='/'>Voltar a Listagem</Link>
+            <button type="button" onClick={goToPlanets}>Voltar a Listagem</button>
         </div>
     )
 }
